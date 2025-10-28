@@ -1,11 +1,14 @@
-
 #include <iostream>
+using namespace std;
+
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-    long long n;
-    std::cout << "Nacital cislo: ";
-    std::cin >> n;
-    if (!(n)) {
-        return 0;
-    }
+    int cislo;
+    cout << "Vloz svoje cislo: ";
+    cin >> cislo;
+    if (cislo % 2 == 0) {
+        cout << "Cislo je párne";
+    } else
+        cout << "Cislo je neparne";
+
+    return 0;
+}
