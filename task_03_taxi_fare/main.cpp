@@ -1,9 +1,23 @@
 
-#include <iostream>
-#include <iomanip>
 #include <cmath>
+#include <iomanip>
+#include <iostream>
+using namespace std;
 int main() {
 
-    // TODO: compute the fare as specified and print with two decimals
-    return 0;
+    long long km, suma = 0;
+
+    cout << "Zadaj najazdene kilometre";
+    cin >> km;
+
+    if (km <= 2) {
+        suma = 4;
+        cout << "Cena za taxik je: " << suma << "eura";
+    }
+
+    else {
+        suma = 4.00 + 1.50 * ceil(km - 2);
+        cout << "Cena za taxik je:" << suma << "eur";
+    }
+
 }

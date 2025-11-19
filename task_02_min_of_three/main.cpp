@@ -1,11 +1,22 @@
 
 #include <iostream>
+using namespace std;
 int main() {
 
-    int a, b, c;
-    if (a << b << c) {
-        }
+    long long a, b, c;
 
-    // TODO: print the minimum of a, b, c
-    return 0;
+    cout << "Zadaj tri cisla:";
+    cin >> a >> b >> c;
+
+    long long min = a;
+
+    if (b < min) {
+        min = b;
+    }
+
+    if (c < min) {
+        min = c;
+    }
+
+    cout << "Najmensie cislo je: " << min;
 }
